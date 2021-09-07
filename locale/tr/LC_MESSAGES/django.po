@@ -19,7 +19,7 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: wikipedialibrary@wikimedia.org\n"
-"POT-Creation-Date: 2021-08-31 11:33+0000\n"
+"POT-Creation-Date: 2021-09-07 21:09+0000\n"
 "PO-Revision-Date: 2021-08-26 11:27:40+0000\n"
 "Language: tr\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -914,7 +914,7 @@ msgstr ""
 
 #. Translators: When a user applies for a set of resources, they receive this message if none are currently available. They are instead placed on a 'waitlist' for later approval.
 #. Translators: When a user renews their resource, they receive this message if none are currently available. They are instead placed on a 'waitlist' for later approval.
-#: TWLight/applications/views.py:466 TWLight/applications/views.py:1535
+#: TWLight/applications/views.py:466 TWLight/applications/views.py:1537
 msgid ""
 "This partner does not have any access grants available at this time. You may "
 "still apply for access; your application will be reviewed when access grants "
@@ -1001,12 +1001,12 @@ msgstr ""
 "varsa <a href='{contact}'>bize ulaşın</a>."
 
 #. Translators: this lets a reviewer set the status of a single application.
-#: TWLight/applications/views.py:1048
+#: TWLight/applications/views.py:1050
 msgid "Set application status"
 msgstr "Başvuru durumunu ayarla"
 
 #. Translators: This warning is message is shown to applicants when the number of pending applications is greater than the number of accounts available.
-#: TWLight/applications/views.py:1066
+#: TWLight/applications/views.py:1068
 msgid ""
 "There are more pending applications than available accounts. Your "
 "application might get waitlisted."
@@ -1015,22 +1015,22 @@ msgstr ""
 "listesine alınabilir."
 
 #. Translators: this message is shown to coordinators who attempt to change an application's Status from INVALID to any other Status.
-#: TWLight/applications/views.py:1079
+#: TWLight/applications/views.py:1081
 msgid "Status of INVALID applications cannot be changed."
 msgstr "GEÇERSİZ başvuruların durumu değiştirilemez."
 
 #. Translators: When a coordinator is batch editing (https://wikipedialibrary.wmflabs.org/applications/list/), they receive this message if they click Set Status without selecting any applications.
-#: TWLight/applications/views.py:1115
+#: TWLight/applications/views.py:1117
 msgid "Please select at least one application."
 msgstr "Lütfen, en az bir başvuru seçin."
 
 #. Translators: After a coordinator has changed the status of a number of applications, this message appears.
-#: TWLight/applications/views.py:1273
+#: TWLight/applications/views.py:1275
 msgid "Batch update of application(s) {} successful."
 msgstr "Toplu iş/uygulama {} başarılı."
 
 #. Translators: After a coordinator has changed the status of a number of applications to APPROVED, if the corresponding partner(s) is/are waitlisted or has no accounts for distribution, this message appears.
-#: TWLight/applications/views.py:1282
+#: TWLight/applications/views.py:1284
 msgid ""
 "Cannot approve application(s) {} as partner(s) with proxy authorization "
 "method is/are waitlisted and (or) has/have not enough accounts available. If "
@@ -1043,17 +1043,17 @@ msgstr ""
 "onaylayın."
 
 #. Translators: This message is shown to coordinators who attempt to assign the same access code to multiple users.
-#: TWLight/applications/views.py:1453
+#: TWLight/applications/views.py:1455
 msgid "Error: Code used multiple times."
 msgstr "Hata: Kod birden çok kez kullanılmış."
 
 #. Translators: After a coordinator has marked a number of applications as 'sent', this message appears.
-#: TWLight/applications/views.py:1494
+#: TWLight/applications/views.py:1496
 msgid "All selected applications have been marked as sent."
 msgstr "Seçilen tüm başvurular, gönderildi olarak işaretlendi."
 
 #. Translators: When a user tries to renew their resource, they receive this message if the partner is not available.
-#: TWLight/applications/views.py:1525
+#: TWLight/applications/views.py:1527
 msgid ""
 "Cannot renew application at this time as partner is not available. Please "
 "check back later, or contact us for more information."
@@ -1062,13 +1062,13 @@ msgstr ""
 "tekrar kontrol edin veya daha fazla bilgi için bizimle iletişime geçin."
 
 #. Translators: This message is displayed when an attempt by a user to renew an application has been denied for some reason.
-#: TWLight/applications/views.py:1561
+#: TWLight/applications/views.py:1563
 #, python-brace-format
 msgid "Attempt to renew unapproved application #{pk} has been denied"
 msgstr "Onaylanmayan bir başvurusu yenilemeye çalışıldı #{pk} reddedildi"
 
 #. Translators: If a user requests the renewal of their account, but it wasn't renewed, this message is shown to them.
-#: TWLight/applications/views.py:1633
+#: TWLight/applications/views.py:1635
 msgid ""
 "This object cannot be renewed. (This probably means that you have already "
 "requested that it be renewed.)"
@@ -1077,7 +1077,7 @@ msgstr ""
 "demektir.)"
 
 #. Translators: If a user requests the renewal of their account, this message is shown to them.
-#: TWLight/applications/views.py:1643
+#: TWLight/applications/views.py:1645
 msgid ""
 "Your renewal request has been received. A coordinator will review your "
 "request."
@@ -1307,8 +1307,8 @@ msgstr "Meta sayfası"
 #. Translators: Alt text for the Wikipedia Library shown in the top left of all pages.
 #. Translators: Name of the project/tool.
 #: TWLight/emails/templates/emails/contact.html:45
-#: TWLight/templates/header_partial_b3.html:18
-#: TWLight/templates/header_partial_b4.html:17
+#: TWLight/templates/header_partial_b3.html:23
+#: TWLight/templates/header_partial_b4.html:18
 #: TWLight/templates/login_partial.html:10
 #: TWLight/templates/login_partial.html:14 TWLight/templates/new_base.html:15
 msgid "The Wikipedia Library"
@@ -2877,32 +2877,45 @@ msgid "User language distribution"
 msgstr "Kullanıcı dili dağıtımı"
 
 #. Translators: Alt text for the Wikipedia Library shown in the top left of all pages.
-#: TWLight/templates/header_partial_b3.html:14
-#: TWLight/templates/header_partial_b4.html:11
+#: TWLight/templates/header_partial_b3.html:19
+#: TWLight/templates/header_partial_b4.html:14
 msgid "The Wikipedia Library home"
 msgstr "Vikipedi Kütüphanesi anasayfası"
 
+#: TWLight/templates/header_partial_b3.html:50
+#: TWLight/templates/header_partial_b4.html:45
+#, fuzzy
+#| msgid "Translate the Library"
+msgid "Search the library"
+msgstr "Çeviri"
+
+#. Translators: Shown in the search button.
+#: TWLight/templates/header_partial_b3.html:54
+#: TWLight/templates/header_partial_b4.html:48
+msgid "Search"
+msgstr ""
+
 #. Translators: Shown in the top bar of almost every page when the current user is an account coordinator, taking them to the page where they can see existing applications.
-#: TWLight/templates/header_partial_b3.html:35
-#: TWLight/templates/header_partial_b4.html:32
+#: TWLight/templates/header_partial_b3.html:80
+#: TWLight/templates/header_partial_b4.html:70
 msgid "Review"
 msgstr "İncele"
 
 #. Translators: Shown in the top bar of almost every page when the current user is an account coordinator, taking them to the page where they can send approved applications to partners for setup.
-#: TWLight/templates/header_partial_b3.html:41
-#: TWLight/templates/header_partial_b4.html:38
+#: TWLight/templates/header_partial_b3.html:86
+#: TWLight/templates/header_partial_b4.html:76
 msgid "Send data to partners"
 msgstr "İş ortaklarına veri gönder"
 
 #. Translators: Shown in the top bar of almost every page, taking users to a page where they can suggest new collections to the Library.
-#: TWLight/templates/header_partial_b3.html:49
-#: TWLight/templates/header_partial_b4.html:46
+#: TWLight/templates/header_partial_b3.html:94
+#: TWLight/templates/header_partial_b4.html:84
 msgid "Suggest a collection"
 msgstr "Koleksiyon öner"
 
 #. Translators: A button to log out of The Wikipedia Library.
-#: TWLight/templates/header_partial_b3.html:62
-#: TWLight/templates/header_partial_b4.html:59
+#: TWLight/templates/header_partial_b3.html:107
+#: TWLight/templates/header_partial_b4.html:97
 #: TWLight/users/templates/users/eligibility_modal.html:54
 msgid "Log out"
 msgstr "Oturumu kapat"
@@ -3040,7 +3053,7 @@ msgid "Update email"
 msgstr "E-postayı güncelle"
 
 #. Translators: Do not translate.
-#: TWLight/users/models.py:688
+#: TWLight/users/models.py:692
 #, fuzzy, python-brace-format
 #| msgid "Username"
 msgid "{wp_username}"
